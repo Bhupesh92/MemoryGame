@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CMCard" id="gTV-IL-0wX" customClass="CMCard" customModule="Colour_Memory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="189" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="189" height="193"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09t-08-ZR3">
+                        <rect key="frame" x="0.0" y="0.0" width="189" height="193"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Dbl-PH-lqA">
+                                <rect key="frame" x="4" y="4" width="181" height="185"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Dbl-PH-lqA" secondAttribute="bottom" constant="4" id="4Tk-Be-Dn6"/>
+                            <constraint firstItem="Dbl-PH-lqA" firstAttribute="top" secondItem="09t-08-ZR3" secondAttribute="top" constant="4" id="I6g-D0-dHk"/>
+                            <constraint firstItem="Dbl-PH-lqA" firstAttribute="leading" secondItem="09t-08-ZR3" secondAttribute="leading" constant="4" id="XuT-px-l3P"/>
+                            <constraint firstAttribute="trailing" secondItem="Dbl-PH-lqA" secondAttribute="trailing" constant="4" id="o5l-j8-0ka"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="09t-08-ZR3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1UQ-xC-nC8"/>
+                <constraint firstAttribute="bottom" secondItem="09t-08-ZR3" secondAttribute="bottom" id="1js-jO-uXQ"/>
+                <constraint firstItem="09t-08-ZR3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NFb-4a-TqJ"/>
+                <constraint firstAttribute="trailing" secondItem="09t-08-ZR3" secondAttribute="trailing" id="wgH-aP-ajH"/>
+            </constraints>
+            <size key="customSize" width="189" height="193"/>
+            <connections>
+                <outlet property="cardImageView" destination="Dbl-PH-lqA" id="RkH-Jw-x0o"/>
+            </connections>
+            <point key="canvasLocation" x="213.768115942029" y="47.879464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card_bg" width="76" height="95"/>
+    </resources>
+</document>
